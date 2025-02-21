@@ -46,9 +46,7 @@
 
                 
                 <div>
-                @if(Auth::id() === $commentaire->user_id)
-                <a href="{{ route('commentaires.edit', $commentaire->id) }}" class="btn btn-warning btn-sm text-white bg-yellow-600 hover:bg-yellow-700 rounded-md focus:outline-none">Modifier</a>
-            @endif
+               
                 @if(Auth::id() === $commentaire->user_id)
                     <form action="{{ route('commentaires.destroy', $commentaire->id) }}" method="POST" class="inline-block">
                         @csrf

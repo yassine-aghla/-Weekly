@@ -10,6 +10,9 @@
     <div class="text-end mb-3">
         <a href="{{ route('annonces.archives') }}" class="btn btn-primary">annonce Archives</a>
     </div>
+    <div class="text-end mb-3">
+        <a href="{{ route('categories.index') }}" class="btn btn-primary">Ajouter Categorie</a>
+    </div>
 </div>
 
     <div class="row">
